@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 0.5px;
+    color: grey;
+}
+
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .text-primary-500 {
+    color: #014166;
+  }
+  
+  .text-primary-800 {
+    color: #001A29;
+  }
+  
+  .bg-primary-500 {
+    background-color: #014166;
+  }
+  
+  .bg-primary-600 {
+    background-color: #013452;
+  }
+  
+  .focus\:ring-primary-300:focus {
+    --tw-ring-color: #99BBCB;
+  }
+  
+  .bg-gradient-to-b {
+    background-image: linear-gradient(to bottom, #E6EEF2, #ffffff);
+  }
+  
